@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Редактор конспекта: метаданные, текст и панель форматирования -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.editor.NoteEditorFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_note_title"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOutline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_subject"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_s"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_note_subject"
+                    app:startIconDrawable="@drawable/ic_folder">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/act_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_tags"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_note_tags"
+                    app:startIconDrawable="@drawable/ic_tag">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_tags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_s" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_s"
+                android:layout_marginBottom="@dimen/spacing_s" />
+
+            <EditText
+                android:id="@+id/et_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="@string/hint_note_body"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lineSpacingMultiplier="1.2"
+                android:minHeight="@dimen/editor_min_height"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOutline" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Панель форматирования -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.None">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/format_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/spacing_s"
+                android:paddingEnd="@dimen/spacing_s">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_bold"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/format_bold"
+                    app:icon="@drawable/ic_format_bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_italic"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/format_italic"
+                    app:icon="@drawable/ic_format_italic" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_heading"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/format_heading"
+                    app:icon="@drawable/ic_format_heading" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_list"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/format_list"
+                    app:icon="@drawable/ic_format_list" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_checklist"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/format_checklist"
+                    app:icon="@drawable/ic_checklist" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    android:layout_marginEnd="@dimen/spacing_xs"
+                    android:background="?attr/colorOutlineVariant" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_attach_image"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/attach_image"
+                    app:icon="@drawable/ic_image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_attach_audio"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/attach_audio"
+                    app:icon="@drawable/ic_mic" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ocr"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/menu_ocr"
+                    app:icon="@drawable/ic_ocr"
+                    app:iconTint="@color/ocr_accent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ai"
+                    style="@style/Widget.KLO.FormatButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/menu_ai_summary"
+                    app:icon="@drawable/ic_ai"
+                    app:iconTint="@color/ai_accent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

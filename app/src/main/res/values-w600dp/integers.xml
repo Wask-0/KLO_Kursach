@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Планшеты / альбомная ориентация: больше колонок -->
+<resources>
+    <integer name="subjects_span_count">3</integer>
+</resources>

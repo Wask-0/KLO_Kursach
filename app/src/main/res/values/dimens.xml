@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Отступы -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">12dp</dimen>
+    <dimen name="spacing_l">16dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+
+    <!-- Скругления и размеры -->
+    <dimen name="corner_s">8dp</dimen>
+    <dimen name="corner_m">12dp</dimen>
+    <dimen name="corner_l">20dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="icon_s">20dp</dimen>
+    <dimen name="icon_m">24dp</dimen>
+    <dimen name="icon_l">40dp</dimen>
+    <dimen name="avatar_size">88dp</dimen>
+    <dimen name="logo_size">96dp</dimen>
+    <dimen name="subject_color_bar">6dp</dimen>
+    <dimen name="image_preview_height">220dp</dimen>
+    <dimen name="editor_min_height">320dp</dimen>
+    <dimen name="empty_illustration">140dp</dimen>
+    <dimen name="fab_bottom_margin">16dp</dimen>
+</resources>
