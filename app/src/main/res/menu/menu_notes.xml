@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Меню экрана списка конспектов: сортировка (подменю с радиокнопками) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/menu_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_date"
+                    android:checked="true"
+                    android:title="@string/menu_sort_date" />
+                <item
+                    android:id="@+id/sort_title"
+                    android:title="@string/menu_sort_title" />
+                <item
+                    android:id="@+id/sort_subject"
+                    android:title="@string/menu_sort_subject" />
+            </group>
+        </menu>
+    </item>
+</menu>

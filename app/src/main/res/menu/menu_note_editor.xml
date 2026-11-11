@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Меню редактора конспекта -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_check"
+        android:title="@string/menu_save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_ocr"
+        android:icon="@drawable/ic_ocr"
+        android:title="@string/menu_ocr"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_ai_summary"
+        android:icon="@drawable/ic_ai"
+        android:title="@string/menu_ai_summary"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_export"
+        android:icon="@drawable/ic_export"
+        android:title="@string/menu_export"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/menu_delete"
+        app:showAsAction="never" />
+</menu>

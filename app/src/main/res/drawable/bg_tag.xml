@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Фон небольшой метки тега в карточке конспекта -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/md_secondary_container" />
+    <corners android:radius="@dimen/corner_s" />
+    <padding
+        android:bottom="2dp"
+        android:left="@dimen/spacing_s"
+        android:right="@dimen/spacing_s"
+        android:top="2dp" />
+</shape>

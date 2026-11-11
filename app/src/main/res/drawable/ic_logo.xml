@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Логотип: блокнот с конспектом и «искрой» ИИ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path
+        android:fillColor="@color/md_primary"
+        android:pathData="M24,8h44a8,8 0,0 1,8 8v64a8,8 0,0 1,-8 8H24a8,8 0,0 1,-8 -8V16a8,8 0,0 1,8 -8z" />
+    <path
+        android:fillColor="@color/md_primary_container"
+        android:pathData="M30,14h36a4,4 0,0 1,4 4v60a4,4 0,0 1,-4 4H30a4,4 0,0 1,-4 -4V18a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="@color/md_on_primary_container"
+        android:pathData="M34,28h22v4H34zM34,38h28v4H34zM34,48h28v4H34zM34,58h18v4H34z" />
+    <path
+        android:fillColor="@color/md_tertiary"
+        android:pathData="M70,52l3.5,8.5L82,64l-8.5,3.5L70,76l-3.5,-8.5L58,64l8.5,-3.5z" />
+    <path
+        android:fillColor="@color/md_on_primary"
+        android:pathData="M12,22h10v4H12zM12,38h10v4H12zM12,54h10v4H12zM12,70h10v4H12z" />
+</vector>

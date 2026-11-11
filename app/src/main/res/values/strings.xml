@@ -1,3 +1,171 @@
 <resources>
-    <string name="app_name">KLO_Kursach</string>
+    <string name="app_name">Конспекты</string>
+    <string name="app_slogan">Умные конспекты лекций: OCR и ИИ в кармане</string>
+
+    <!-- Навигация -->
+    <string name="nav_notes">Конспекты</string>
+    <string name="nav_subjects">Предметы</string>
+    <string name="nav_search">Поиск</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="title_editor_new">Новый конспект</string>
+    <string name="title_editor_edit">Редактирование</string>
+    <string name="title_ocr">Распознавание текста</string>
+    <string name="title_summary">Краткое содержание (ИИ)</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_about">О приложении</string>
+    <string name="title_export">Экспорт конспекта</string>
+
+    <!-- Меню -->
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_about">О приложении</string>
+    <string name="menu_toggle_theme">Сменить тему</string>
+    <string name="menu_sort">Сортировка</string>
+    <string name="menu_sort_date">По дате изменения</string>
+    <string name="menu_sort_title">По названию</string>
+    <string name="menu_sort_subject">По предмету</string>
+    <string name="menu_save">Сохранить</string>
+    <string name="menu_ocr">Распознать текст с фото</string>
+    <string name="menu_ai_summary">Краткое содержание (ИИ)</string>
+    <string name="menu_export">Экспорт</string>
+    <string name="menu_delete">Удалить</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="menu_add_subject">Добавить предмет</string>
+    <string name="menu_rename">Переименовать</string>
+
+    <!-- Авторизация -->
+    <string name="auth_login_title">Вход</string>
+    <string name="auth_register_title">Регистрация</string>
+    <string name="hint_full_name">ФИО</string>
+    <string name="hint_group">Учебная группа</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_password_repeat">Повторите пароль</string>
+    <string name="action_login">Войти</string>
+    <string name="action_register">Зарегистрироваться</string>
+    <string name="action_to_register">Нет аккаунта? Зарегистрироваться</string>
+    <string name="action_to_login">Уже есть аккаунт? Войти</string>
+    <string name="action_offline">Продолжить офлайн</string>
+    <string name="error_empty_field">Заполните поле</string>
+    <string name="error_email">Некорректный email</string>
+    <string name="error_password_short">Не менее 6 символов</string>
+    <string name="error_password_mismatch">Пароли не совпадают</string>
+
+    <!-- Список конспектов -->
+    <string name="notes_empty_title">Пока нет конспектов</string>
+    <string name="notes_empty_text">Нажмите «+», чтобы создать первый конспект лекции</string>
+    <string name="action_new_note">Новый конспект</string>
+    <string name="filter_all">Все</string>
+    <string name="note_updated">Изменён: %1$s</string>
+    <string name="note_deleted">Конспект удалён</string>
+    <string name="note_saved">Конспект сохранён</string>
+    <string name="undo">Отменить</string>
+
+    <!-- Редактор -->
+    <string name="hint_note_title">Название конспекта</string>
+    <string name="hint_note_subject">Предмет</string>
+    <string name="hint_note_tags">Теги через запятую</string>
+    <string name="hint_note_body">Текст конспекта…</string>
+    <string name="format_bold">Жирный</string>
+    <string name="format_italic">Курсив</string>
+    <string name="format_heading">Заголовок</string>
+    <string name="format_list">Список</string>
+    <string name="format_checklist">Чек-лист</string>
+    <string name="attach_image">Прикрепить изображение</string>
+    <string name="attach_audio">Прикрепить аудиозапись</string>
+    <string name="error_title_required">Укажите название конспекта</string>
+    <string name="confirm_delete_title">Удалить конспект?</string>
+    <string name="confirm_delete_text">Действие нельзя будет отменить.</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">ОК</string>
+    <string name="feature_in_progress">Функция будет доступна в следующей версии</string>
+
+    <!-- Предметы -->
+    <string name="subjects_empty">Добавьте предметы, чтобы раскладывать конспекты по папкам</string>
+    <string name="subject_notes_count">Конспектов: %1$d</string>
+    <string name="hint_subject_name">Название предмета</string>
+    <string name="add">Добавить</string>
+    <string name="subject_notes_empty">В этой папке пока нет конспектов</string>
+
+    <!-- Поиск -->
+    <string name="search_hint">Поиск по конспектам и тегам</string>
+    <string name="search_popular_tags">Популярные теги</string>
+    <string name="search_results">Найдено: %1$d</string>
+    <string name="search_empty">Ничего не найдено</string>
+    <string name="search_start">Введите запрос, чтобы найти конспект</string>
+
+    <!-- OCR -->
+    <string name="ocr_description">Сфотографируйте доску или слайд — приложение распознает печатный и рукописный текст.</string>
+    <string name="ocr_take_photo">Камера</string>
+    <string name="ocr_pick_image">Галерея</string>
+    <string name="ocr_recognize">Распознать</string>
+    <string name="ocr_result">Распознанный текст</string>
+    <string name="ocr_no_image">Изображение не выбрано</string>
+    <string name="ocr_insert">Вставить в конспект</string>
+    <string name="ocr_copy">Копировать</string>
+    <string name="ocr_language">Язык распознавания</string>
+    <string name="ocr_copied">Текст скопирован</string>
+    <string name="ocr_stub_result">Здесь появится текст, распознанный с изображения. Модуль ML Kit Text Recognition будет подключён на этапе реализации функций.</string>
+
+    <!-- ИИ -->
+    <string name="ai_description">ИИ сократит длинный текст лекции до главных тезисов.</string>
+    <string name="ai_source">Исходный текст</string>
+    <string name="ai_length">Длина пересказа</string>
+    <string name="ai_length_short">Кратко</string>
+    <string name="ai_length_medium">Средне</string>
+    <string name="ai_length_detailed">Подробно</string>
+    <string name="ai_generate">Сгенерировать</string>
+    <string name="ai_result">Результат</string>
+    <string name="ai_save_to_note">Сохранить в конспект</string>
+    <string name="ai_empty_source">Добавьте текст для пересказа</string>
+    <string name="ai_summary_header">Краткое содержание (ИИ):</string>
+    <string name="ai_disclaimer">Результат сгенерирован ИИ и может содержать неточности</string>
+
+    <!-- Экспорт -->
+    <string name="export_pdf">Экспорт в PDF</string>
+    <string name="export_pdf_desc">Документ с форматированием и изображениями</string>
+    <string name="export_txt">Экспорт в TXT</string>
+    <string name="export_txt_desc">Простой текстовый файл</string>
+    <string name="export_share">Поделиться</string>
+    <string name="export_share_desc">Отправить через другое приложение</string>
+
+    <!-- Профиль -->
+    <string name="profile_group">Группа: %1$s</string>
+    <string name="profile_stats_notes">Конспектов</string>
+    <string name="profile_stats_subjects">Предметов</string>
+    <string name="profile_stats_tags">Тегов</string>
+    <string name="profile_offline">Офлайн-режим: данные хранятся на устройстве</string>
+    <string name="action_edit_profile">Редактировать профиль</string>
+    <string name="action_logout">Выйти</string>
+    <string name="guest_name">Гость</string>
+    <string name="guest_group">—</string>
+
+    <!-- Настройки -->
+    <string name="pref_category_appearance">Оформление</string>
+    <string name="pref_theme">Тема приложения</string>
+    <string name="pref_font_size">Размер шрифта в редакторе</string>
+    <string name="pref_category_data">Данные</string>
+    <string name="pref_offline">Только офлайн-режим</string>
+    <string name="pref_offline_summary">Не использовать сеть, хранить всё в локальной БД</string>
+    <string name="pref_export_format">Формат экспорта по умолчанию</string>
+    <string name="pref_category_ai">Распознавание и ИИ</string>
+    <string name="pref_ocr_language">Язык OCR</string>
+    <string name="pref_ai_length">Длина пересказа по умолчанию</string>
+    <string name="pref_category_about">О приложении</string>
+    <string name="pref_version">Версия</string>
+    <string name="theme_system">Как в системе</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+
+    <!-- О приложении -->
+    <string name="about_text">Мобильное приложение для ведения конспектов лекций: создание и форматирование заметок, распределение по предметам, распознавание текста с фотографий (ML Kit), генерация краткого содержания с помощью ИИ, полнотекстовый поиск, экспорт в PDF/TXT и работа без сети на локальной базе данных Room.</string>
+    <string name="about_author">Курсовой проект по МДК 01.03 «Разработка мобильных приложений». Студент группы С322 Л.О. Корнилов, ГУАП, 2026</string>
+    <string name="about_version">Версия %1$s</string>
+
+    <!-- Описания для доступности -->
+    <string name="cd_logo">Логотип приложения</string>
+    <string name="cd_avatar">Аватар пользователя</string>
+    <string name="cd_subject_color">Цвет предмета</string>
+    <string name="cd_more">Ещё</string>
+    <string name="cd_image_preview">Предпросмотр изображения</string>
+    <string name="cd_empty">Пустой список</string>
 </resources>

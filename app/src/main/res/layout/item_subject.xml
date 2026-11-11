@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Карточка предмета (папки) -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_s"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_l">
+
+        <ImageView
+            android:id="@+id/iv_folder"
+            android:layout_width="@dimen/icon_l"
+            android:layout_height="@dimen/icon_l"
+            android:contentDescription="@string/cd_subject_color"
+            android:src="@drawable/ic_folder"
+            app:tint="@color/subject_indigo" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            tools:text="Разработка мобильных приложений" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            tools:text="Конспектов: 4" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

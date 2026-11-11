@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Иллюстрация пустого состояния списка конспектов -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+    <path
+        android:fillColor="@color/md_surface_container_high"
+        android:pathData="M70,70m-64,0a64,64 0,1 1,128 0a64,64 0,1 1,-128 0" />
+    <path
+        android:fillColor="@color/md_primary_container"
+        android:pathData="M44,30h44l14,14v62a4,4 0,0 1,-4 4H44a4,4 0,0 1,-4 -4V34a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="@color/md_primary"
+        android:pathData="M88,30v14h14z" />
+    <path
+        android:fillColor="@color/md_outline"
+        android:pathData="M50,56h40v4H50zM50,66h40v4H50zM50,76h40v4H50zM50,86h24v4H50z" />
+    <path
+        android:fillColor="@color/md_tertiary"
+        android:pathData="M104,84l3,7 7,3 -7,3 -3,7 -3,-7 -7,-3 7,-3z" />
+</vector>

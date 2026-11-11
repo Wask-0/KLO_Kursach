@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Нижний лист выбора формата экспорта (PDF / TXT / поделиться) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_xl">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_sheet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xl"
+        android:layout_marginBottom="@dimen/spacing_s"
+        android:text="@string/title_export"
+        android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+    <include
+        android:id="@+id/option_pdf"
+        layout="@layout/item_export_option" />
+
+    <include
+        android:id="@+id/option_txt"
+        layout="@layout/item_export_option" />
+
+    <include
+        android:id="@+id/option_share"
+        layout="@layout/item_export_option" />
+</LinearLayout>

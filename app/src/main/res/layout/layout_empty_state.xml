@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Переиспользуемый блок «пустое состояние» (подключается через include) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_xl">
+
+    <ImageView
+        android:id="@+id/empty_image"
+        android:layout_width="@dimen/empty_illustration"
+        android:layout_height="@dimen/empty_illustration"
+        android:contentDescription="@string/cd_empty"
+        android:src="@drawable/ill_empty_notes" />
+
+    <TextView
+        android:id="@+id/empty_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_l"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        tools:text="@string/notes_empty_title" />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        tools:text="@string/notes_empty_text" />
+</LinearLayout>

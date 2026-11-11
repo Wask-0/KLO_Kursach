@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_entries">
+        <item>@string/theme_system</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+    <string-array name="theme_values" translatable="false">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <string-array name="font_size_entries">
+        <item>Мелкий</item>
+        <item>Обычный</item>
+        <item>Крупный</item>
+    </string-array>
+    <string-array name="font_size_values" translatable="false">
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+    </string-array>
+
+    <string-array name="export_entries">
+        <item>PDF</item>
+        <item>TXT</item>
+    </string-array>
+    <string-array name="export_values" translatable="false">
+        <item>pdf</item>
+        <item>txt</item>
+    </string-array>
+
+    <string-array name="ocr_language_entries">
+        <item>Русский и английский</item>
+        <item>Только латиница</item>
+    </string-array>
+    <string-array name="ocr_language_values" translatable="false">
+        <item>ru_en</item>
+        <item>latin</item>
+    </string-array>
+
+    <string-array name="ai_length_entries">
+        <item>@string/ai_length_short</item>
+        <item>@string/ai_length_medium</item>
+        <item>@string/ai_length_detailed</item>
+    </string-array>
+    <string-array name="ai_length_values" translatable="false">
+        <item>short</item>
+        <item>medium</item>
+        <item>detailed</item>
+    </string-array>
+
+    <!-- Палитра для меток предметов -->
+    <array name="subject_colors">
+        <item>@color/subject_indigo</item>
+        <item>@color/subject_teal</item>
+        <item>@color/subject_orange</item>
+        <item>@color/subject_pink</item>
+        <item>@color/subject_purple</item>
+        <item>@color/subject_green</item>
+    </array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Цвет иконок и подписей нижней навигации -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/md_on_secondary_container" android:state_checked="true" />
+    <item android:color="@color/md_on_surface_variant" />
+</selector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Меню панели инструментов главного экрана -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_toggle_theme"
+        android:icon="@drawable/ic_dark_mode"
+        android:title="@string/menu_toggle_theme"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>
