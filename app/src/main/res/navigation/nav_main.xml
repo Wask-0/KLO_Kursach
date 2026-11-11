@@ -98,7 +98,7 @@
             app:argType="long" />
         <argument
             android:name="title"
-            android:defaultValue="@string/title_editor_new"
+            android:defaultValue="Новый конспект"
             app:argType="string" />
         <action
             android:id="@+id/action_editor_to_ocr"
