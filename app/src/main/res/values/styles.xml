@@ -73,7 +73,7 @@
     </style>
 
     <!-- Текст-подписи разделов -->
-    <style name="KLO.SectionLabel">
+    <style name="KLO.SectionLabel" parent="Widget.MaterialComponents.TextView">
         <item name="android:textAppearance">?attr/textAppearanceLabelLarge</item>
         <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:layout_marginTop">@dimen/spacing_l</item>
